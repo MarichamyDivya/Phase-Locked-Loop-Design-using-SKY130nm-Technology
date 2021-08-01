@@ -303,13 +303,13 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 <b>Area:</b> 49.09um square <br>
 
-### Multiplier
+### MUX
 
-#### The command to be run to obtain the Multiplier layout is as shown below:
+#### The command to be run to obtain the MUX layout is as shown below:
 
 ![mux_lay_term](https://user-images.githubusercontent.com/88256941/127762428-1c29e1a5-4051-4e39-8ac4-92c0d87ddffa.JPG)
 
-#### The Multiplier layout is as shown below:
+#### The MUX layout is as shown below:
 
 ![mux_lay](https://user-images.githubusercontent.com/88256941/127762216-029ce765-fbae-4fa1-9822-66be7bff56ee.JPG)
 
@@ -340,6 +340,10 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 ### Frequency Divider
 
+![FD_postlaywave](https://user-images.githubusercontent.com/88256941/127766630-8942e55a-9c6d-48c7-8846-a3dc53005983.JPG)
+
+<b>Red:</b> Input Clock <br>
+<b>Blue:</b> Output Clock <br>
 
 
 
