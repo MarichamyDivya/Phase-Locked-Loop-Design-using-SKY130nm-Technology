@@ -33,27 +33,82 @@ PLL has five blocks:
 
 It detects the phase (and frequency) error between the input reference clock IN (that is, crystal oscillator) and feedback clock FB. It generates two output signals, UP and DN, whose pulse width is proportional to the phase error.
 
-2. Charge Pump (CP)
-
-It generates the error current (ICP) which is proportional to the phase difference od pulse width between UP and DN which inturn is proportional to the input phase error. 
-
-3. Loop Pass Filter (LP)
-
-It converts the error current into error voltage. It also controls the loop dynamics and stability of the system.
-
-4. Voltage Controlled Oscillator (VCO)
-
-VCO is the heart of PLL and it generates the desired high frequency clock output. 
-
-5. Feedback Divider (N)
-
-It divides the VCO clock to generate the feedback clock with same frequency as input reference clock.
-
-### Phase Frequency Detector (PFD)
-
 For, detecting the phase error between the input reference clock and the feedback clock, we donot use XOR phase detector as it doesnt correct the frequency errors. Instead, we use Phase Frequency Detector , which will correct both, phase and frequency differences between the input reference clock and the feedback clock.
 
 The basic block diagram of PFD is as shown below:
 
+![PFD_block](https://user-images.githubusercontent.com/88256941/127757062-ac847dfe-ae08-4907-a467-977b1c018786.JPG)
+
+When falling edge of reference clock leads feedback clock, the UP signal goes high and DN signal remains low. UP signal remains high until it detects the falling edge of the feedback clock. As soon as feedback clock falling edge arrives, UP signal goes low. 
+
+When falling edge of feedback clock leads reference clock, the DN signal goes high and UP signal remains low. DN signal remains high until it detects the falling edge of the reference clock. As soon as reference clock falling edge arrives, DN signal goes low. 
+
+Dead zone is one of the problem of PFD. The phase difference below which PFD output is not able to reach the desired logical level and fails to turn on the charge pump switches is called the dead zone. Above precision PFDs are present, which overcomes this issues.
+
+2. Charge Pump (CP)
+
+The loop filer takes input as voltage/current. Hence, the pulse width modulates signal at the output of PFD have to be transformed to volateg/current. Therefore, we use charge pump circuit. 
+
+It generates the error current (ICP) which is proportional to the phase difference od pulse width between UP and DN which inturn is proportional to the input phase error. 
+
+  Charge pump chagres or discharges the loop filter based upon the UP and DN signals. If UP signal is high, charge pump charges the loop filter. If DN signal is high, charge pump discharges the loop filter.
+  
+  Charge pump circuit have of charge leakage, which should be reduced as much as possible.
+
+3. Loop Pass Filter (LPF)
+
+It converts the error current into error voltage. It also controls the loop dynamics and stability of the system. 
+
+For the stability purpose, C2 capacitor should be one-tenth of the C1 capacitor. Loop filter bandwidth should be one-tenth of the highes output frequency.
+4. Voltage Controlled Oscillator (VCO)
+
+VCO is the heart of PLL and it generates the desired high frequency clock output. 
+
+The most common on-chip VCO used is the ring oscillators which consists of odd number of inverters. The period will be twice the number of inverter delays multiplied be the inverter delay. One of the way, to control the frequency of the ring oscillator is to vary the current using the current starving technique. It is important to note that, we should design the VCO is such a way that the range of frequencies we want for the PLL is generated properly by the VCO.
+
+5. Frequency Divider (N)
+
+It divides the VCO clock to generate the feedback clock with same frequency as input reference clock.
+
+A toggle flip flop generates the clock which has twice the time period of the input clock given to it, that is we obtain the clock having half the frequency of the input clock provided to the frequency divider. For 8x clock multiplier, we should divide the output clock by 8 to generate feedback clock. For obtaining one-eigth of frequency, we should cascade three toggle flip flops. 
+
+### Important terms used in PLL
+
+1. Lock-in range
+
+Range of freuencies which PLL can stay in lock in steady state. It mainly depends on the range of frequencies VCO can produce and is limited by the dead zone of PFD.
+
+2. Capture range 
+
+Range of frequencies which PLL can lock when started from unlocked condition. Capture range is smaller than the lock-in range. It depends on the loop filter bandwidth.
+
+3. Settling time
+
+The time taken by the PLL to lock from an unlocked state is called the settling time. It depends on how quickly charge pump rises to the stable value.
+
+## Lab setup
+
+We should use the source code to build any software tool as it gives the latest updates and fixes. 
+Here, we will use two tools. They are:
+Ngspice : for transisto level simulation
+Magic : for layout design and parasitic extraction.
+
+### Using tools
+
+From the ubuntu package , we will be downloading Ngspice directly.  Magic we will compile it with the source code because we need the latest version of Magic to support Skywater130nm technology node.
+
+Ngspic: ngsice<circuit_file_name> 
+
+It plots the results based upon the simulation instruction given in the circuit file after simulating the given circuit file. 
 
 
+
+Magic: magic - T <Technology_file_from_PDK><the_layout_file_to_open> 
+
+It opens the layout file, where we can view the layout  and make modifications to it. Magic has many features, out of which we will be using parasitic extraction and gds features.
+
+### Developmet Flow
+
+With the PLL specifications, we will perform SPICE-level circuit development and pre-layout simulation. After the pre-layout simulation we develop layout. Before layout phase we donot know the interconnection or proximity or size of the different circuits. After layout, we can extract the capacitive effect which is called a s the parasitic extraction. After this, we have spice netlist which is more closer to the real worls. Then, we do the post simulation which is more accurate than thr pre-layout simulation.
+
+Its is important to note that, after each simulation step, we should make several changes to bring the working of the circuit much closer to the required specification.
