@@ -362,6 +362,16 @@ Similarly, we run this command for different PLL blocks by appropriately changin
 <b>Red:</b> Input Clock <br>
 <b>Blue:</b> Output Clock <br>
 
+### PLL
+
+![PLL_postlay](https://user-images.githubusercontent.com/88256941/127770984-7c90ec30-d566-4f25-936a-c7d98592a715.JPG)
+
+<b>Red:</b> Reference Clock <br>
+<b>Blue:</b> Output Clock Divided by 8 <br>
+<b>Yellow:</b> Down Signal <br>
+<b>Brown:</b> Up Signal <br>
+<b>Pink (top) :</b>Charge pump output <br>
+
 ## About Tapeout
 
 Tapeout means to send our design to the fab after we prepare it with all the additional support we require. 
