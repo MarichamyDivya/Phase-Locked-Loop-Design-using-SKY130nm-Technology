@@ -179,4 +179,71 @@ After creating the .cr files we run the Ngspice simulation.
 <b>Red:</b> Charge pump output voltage <br>
 <b>Leakage:</b> 40uV increase every 1us <br>
 
+### VCO
+
+#### The command to be run to obtain the VCO waveform is as shown below:
+
+![vco_ngspice](https://user-images.githubusercontent.com/88256941/127760903-629cd0e8-12bc-452b-9681-07731184b037.JPG)
+
+#### VCO waveform is as shown below:
+
+![VCO_wave](https://user-images.githubusercontent.com/88256941/127760904-d2aabad9-c442-495e-98ae-555d6ffbb244.JPG)
+
+<b>Red:</b> Control Voltage <br>
+<b>Blue:</b> Output Clock <br>
+
+### Frequency Divider 
+
+#### The command to be run to obtain the Frequency Divider waveform is as shown below:
+
+![Fd_wave](https://user-images.githubusercontent.com/88256941/127760907-64091b47-a446-41d1-8060-17bcb3c86b6e.JPG)
+
+#### The Frequency Divider waveform is as shown below:
+
+![fd_ngspice](https://user-images.githubusercontent.com/88256941/127760906-196a39d9-7bdb-49f7-a754-960f92e90291.JPG)
+
+<b>Red:</b> Output Clock <br>
+<b>Blue:</b> Input Clock <br>
+
+## Troubleshooting steps
+
+If output doesn't match or mimic properly, first is to observe what kinds of issues you are facing. Always try to debug individual circuits beore simulating the whole circuit.
+
+If signals are coming flat up or the simulation is crashing then check whether the connectivity is done properly or any issues like wrong net names, capitaliszation issues or parameter value issues. 
+
+If the signals are coming as expected but mimicing of signal is not happening then verify the following:
+
+1. VCO is working within the required range or not.
+
+2. Whether the PFD is able to detect small phase differences or not.
+
+3. How is the response of charge pump? Is it fast or slow. Too much fluctuations in charging or discharging, then capacitor sizing is the thing where we have to pay the attention to. Also, check if there is charge leakage. If the charge pump is charging when the input is zero, then there is charge leakage issue.
+
+4. If nothing works out, then try adjusting the loop filter by using the thumb rule.
+
+## Layout
+
+In layout, these are the following different colour codes for different components used in layout: 
+
+1. p-diffusion - plane orange colour
+
+2. n-diffusion - plane green colour
+
+3. polysilicon - plane red
+
+4. n-well - slash lines
+
+5. metal1 layer - purple
+
+6. local interconnect layer - blue
+
+To connect two transistors, we use interconnect layer. To connect two metal layers, we use the contact/via.
+
+
+
+
+
+
+
+
 
