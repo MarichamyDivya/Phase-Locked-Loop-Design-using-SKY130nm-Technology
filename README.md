@@ -49,9 +49,11 @@ VCO is the heart of PLL and it generates the desired high frequency clock output
 
 It divides the VCO clock to generate the feedback clock with same frequency as input reference clock.
 
-### Phase Frequency Detector
+### Phase Frequency Detector (PFD)
 
 For, detecting the phase error between the input reference clock and the feedback clock, we donot use XOR phase detector as it doesnt correct the frequency errors. Instead, we use Phase Frequency Detector , which will correct both, phase and frequency differences between the input reference clock and the feedback clock.
 
-A basic
+The basic block diagram of PFD is as shown below:
+
+
 
