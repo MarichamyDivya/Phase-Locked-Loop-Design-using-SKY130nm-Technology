@@ -129,6 +129,22 @@ sudo make install
 
 Then we should install the sky130nm technology information which Magic needs for desiging the layout.
 
+## PLL Specifications
+
+Corner = TT
+
+Supply voltage = 1.8V
+
+Temperature = Room temperature
+
+Input Fmin= 5MHz , Fmax= 12.5MHz
+
+Multiplier = 8x
+
+Jitter (RMS) < -20ns
+
+Duty cycle = 50%
+
 # DAY 2 - PLL simulation (Prelayout and Postlayout)
 
 A spice file is a text file with .cr extenstion.
@@ -283,7 +299,7 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 #### The Frequency Divider layout is as shown below:
 
-![fd_lay](https://user-images.githubusercontent.com/88256941/127762215-cd2f6902-0fea-4418-8d46-b1f61f8f0b05.JPG)
+![fd_lay](https://user-images.githubusercontent.com/88256941/127763592-768a8bda-0612-49ca-9db1-f5d218d1736d.JPG)
 
 <b>Area:</b> 49.09um square <br>
 
