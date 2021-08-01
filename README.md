@@ -239,6 +239,8 @@ In layout, these are the following different colour codes for different componen
 
 To connect two transistors, we use interconnect layer. To connect two metal layers, we use the contact/via.
 
+### Phase Frequency Detector 
+
 
 
 
