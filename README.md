@@ -212,6 +212,18 @@ Similarly, we run this command for different PLL blocks by appropriately changin
 <b>Red:</b> Output Clock <br>
 <b>Blue:</b> Input Clock <br>
 
+### PLL
+
+#### The PLL waveform is as shown below: 
+
+![PLL_wave](https://user-images.githubusercontent.com/88256941/127768478-affcafc3-d75f-4acb-b51c-dcd16953f494.JPG)
+
+<b>Red:</b> Reference Clock <br>
+<b>Blue:</b> Output Clock Divided by 8 <br>
+<b>Yellow:</b> Down Signal <br>
+<b>Brown:</b> Up Signal <br>
+<b>Pink:</b>Charge pump output <br>
+
 ## Troubleshooting steps
 
 If output doesn't match or mimic properly, first is to observe what kinds of issues you are facing. Always try to debug individual circuits beore simulating the whole circuit.
@@ -252,6 +264,8 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 ![PFD_lay_term](https://user-images.githubusercontent.com/88256941/127763547-f3c9e184-2b32-4162-b851-936adfbb1ea6.JPG)
 
+Similarly, we run this command for different PLL blocks by appropriately changing the name of the block as per the requirement.
+
 #### The PFD layout is as shown below:
 
 ![PFD_lay](https://user-images.githubusercontent.com/88256941/127762217-c5c3df73-665a-4179-b2d1-4df9f50f7d8e.JPG)
@@ -259,10 +273,6 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 <b>Area:</b> 49.09um square <br>
 
 ### Charge Pump
-
-#### The command to be run to obtain the CP layout is as shown below:
-
-![cp_lay_term](https://user-images.githubusercontent.com/88256941/127762255-cb2b34a2-d4c3-4089-bd38-0beca2a07589.JPG)
 
 #### The CP layout is as shown below:
 
@@ -272,10 +282,6 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 ### VCO
 
-#### The command to be run to obtain the VCO layout is as shown below:
-
-![VCO_lay_term](https://user-images.githubusercontent.com/88256941/127762254-f5793183-b444-4423-aeae-bcd02dff8932.JPG)
-
 #### The VCO layout is as shown below:
 
 ![VCO_lay](https://user-images.githubusercontent.com/88256941/127762210-81c50482-4f7a-47d0-8951-a326ee792f15.JPG)
@@ -283,10 +289,6 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 <b>Area:</b> 57.73um square <br>
 
 ### Frequency Divider
-
-#### The command to be run to obtain the Frequency Divider layout is as shown below:
-
-![Fd_lay_term](https://user-images.githubusercontent.com/88256941/127763825-11b964fc-cc75-415c-9977-0d45fe16aac0.JPG)
 
 #### The Frequency Divider layout is as shown below:
 
@@ -296,10 +298,6 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 ### MUX
 
-#### The command to be run to obtain the MUX layout is as shown below:
-
-![mux_lay_term](https://user-images.githubusercontent.com/88256941/127762428-1c29e1a5-4051-4e39-8ac4-92c0d87ddffa.JPG)
-
 #### The MUX layout is as shown below:
 
 ![mux_lay](https://user-images.githubusercontent.com/88256941/127762216-029ce765-fbae-4fa1-9822-66be7bff56ee.JPG)
@@ -307,10 +305,6 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 <b>Area:</b> 12.12um square <br>
 
 ### Integrated PLL
-
-#### The command to be run to obtain the PLL layout is as shown below:
-
-![PLL_lay_term](https://user-images.githubusercontent.com/88256941/127762252-00be57de-0cef-444a-aa4a-4ddce0487b38.JPG)
 
 #### The PLL layout is as shown below:
 
@@ -341,6 +335,12 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 #### CP output rise due to charge leakage: 
 
+![Cp_leakage_wave](https://user-images.githubusercontent.com/88256941/127768463-6d6e443a-828e-46d0-9dba-ee8a24bef279.JPG)
+
+<b>Orange:</b> Charge Pump Output Voltage <br>
+<b>Red:</b> Up Signal <br>
+<b>Blue:</b> Down Signal <br>
+<b>Leakage:</b> < 0.05V in 100us <br>
 
 ### VCO
 
