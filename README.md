@@ -147,12 +147,11 @@ After creating the .cr files we run the Ngspice simulation.
 
 ### Phase Frequency Detector 
 
-The command to be run to obtain the PFD waveform is as shown below:
+#### The command to be run to obtain the PFD waveform is as shown below:
 
 ![PD_ngspice](https://user-images.githubusercontent.com/88256941/127760351-ce5670d5-fe8f-4380-aa0d-fa053832e3fc.JPG)
 
-
-The PFD waveform is as shown below:
+#### The PFD waveform is as shown below:
 
 ![PD_wave](https://user-images.githubusercontent.com/88256941/127760347-cac474f0-bd49-4eae-a8f5-6c7492be2f07.JPG)
 
@@ -162,4 +161,22 @@ The PFD waveform is as shown below:
 <b>Green:</b> Down Signal
 
 ### Charge Pump 
+
+#### The command to be run to obtain the CP various waveforms is as shown below:
+
+![cp_ngspice](https://user-images.githubusercontent.com/88256941/127760601-47ff13a2-7a6a-4f44-844f-4f33f7866406.JPG)
+
+#### CP response when "UP" signal is high
+
+![CP_charging](https://user-images.githubusercontent.com/88256941/127760599-9c5bc28d-81e8-4af5-b811-cea57816073d.JPG)
+
+<b>Red:</b> Charge pump output voltage <br>
+
+#### CP output rise due to charge leakage:
+
+![cp_wave](https://user-images.githubusercontent.com/88256941/127760602-cd0bd984-2aa0-4069-bb1e-e0a7175ee05f.JPG)
+
+<b>Red:</b> Charge pump output voltage <br>
+<b>Leakage:</b> 40uV increase every 1us <br>
+
 
