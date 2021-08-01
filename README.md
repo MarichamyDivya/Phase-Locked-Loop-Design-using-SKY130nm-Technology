@@ -331,8 +331,14 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 ### Phase Frequency Detector
 
+![PFD_postlay](https://user-images.githubusercontent.com/88256941/127766198-5b39072a-7a95-4b99-8272-1f658c7d8e50.JPG)
 
+<b>Red:</b> Clock 1 <br>
+<b>Blue:</b> Clock 2 <br>
+<b>Orange:</b> Up signal <br>
+<b>Green:</b> Down signal <br>
 
+### Frequency Divider
 
 
 
