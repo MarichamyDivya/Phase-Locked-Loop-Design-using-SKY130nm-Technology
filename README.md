@@ -241,6 +241,84 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 ### Phase Frequency Detector 
 
+#### The command to be run to obtain the PFD layout is as shown below:
+
+![PFD_lay_term](https://user-images.githubusercontent.com/88256941/127762250-f5c4eb3f-805a-4d2b-8dbc-0bc4a5e22e7e.JPG)
+
+#### The PFD layout is as shown below:
+
+![PFD_lay](https://user-images.githubusercontent.com/88256941/127762217-c5c3df73-665a-4179-b2d1-4df9f50f7d8e.JPG)
+
+<b>Area:</b> 49.09um square <br>
+
+### Charge Pump
+
+#### The command to be run to obtain the CP layout is as shown below:
+
+![cp_lay_term](https://user-images.githubusercontent.com/88256941/127762255-cb2b34a2-d4c3-4089-bd38-0beca2a07589.JPG)
+
+#### The CP layout is as shown below:
+
+![CP_lay](https://user-images.githubusercontent.com/88256941/127762213-996c224e-7b1e-42f6-9b50-a8107cf0cc1f.JPG)
+
+<b>Area:</b> 132.29um square <br>
+
+### VCO
+
+#### The command to be run to obtain the VCO layout is as shown below:
+
+![VCO_lay_term](https://user-images.githubusercontent.com/88256941/127762254-f5793183-b444-4423-aeae-bcd02dff8932.JPG)
+
+#### The VCO layout is as shown below:
+
+![VCO_lay](https://user-images.githubusercontent.com/88256941/127762210-81c50482-4f7a-47d0-8951-a326ee792f15.JPG)
+
+<b>Area:</b> 57.73um square <br>
+
+### Frequency Divider
+
+#### The command to be run to obtain the Frequency Divider layout is as shown below:
+
+![Fd_lay_term](https://user-images.githubusercontent.com/88256941/127762256-af3a007d-c898-448a-94e2-e1bdc46c31fa.JPG)
+
+#### The Frequency Divider layout is as shown below:
+
+![fd_lay](https://user-images.githubusercontent.com/88256941/127762215-cd2f6902-0fea-4418-8d46-b1f61f8f0b05.JPG)
+
+<b>Area:</b> 49.09um square <br>
+
+### Multiplier
+
+#### The command to be run to obtain the Multiplier layout is as shown below:
+
+![Fd_lay_term](https://user-images.githubusercontent.com/88256941/127762256-af3a007d-c898-448a-94e2-e1bdc46c31fa.JPG)
+
+#### The Multiplier layout is as shown below:
+
+![mux_lay](https://user-images.githubusercontent.com/88256941/127762216-029ce765-fbae-4fa1-9822-66be7bff56ee.JPG)
+
+<b>Area:</b> 49.09um square <br>
+
+### Integrated PLL
+
+#### The command to be run to obtain the PLL layout is as shown below:
+
+![PLL_lay_term](https://user-images.githubusercontent.com/88256941/127762252-00be57de-0cef-444a-aa4a-4ddce0487b38.JPG)
+
+#### The PLL layout is as shown below:
+
+![PLL_lay](https://user-images.githubusercontent.com/88256941/127762206-7b097ca1-0888-4d52-9484-5188fd702c6e.JPG)
+
+<b>Area:</b> 49.09um square <br>
+
+
+
+
+
+
+
+
+
 
 
 
