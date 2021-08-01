@@ -207,7 +207,7 @@ Similarly, we run this command for different PLL blocks by appropriately changin
 
 #### The Frequency Divider waveform is as shown below:
 
-![fd_ngspice](https://user-images.githubusercontent.com/88256941/127760906-196a39d9-7bdb-49f7-a754-960f92e90291.JPG)
+![Fd_wave](https://user-images.githubusercontent.com/88256941/127760907-64091b47-a446-41d1-8060-17bcb3c86b6e.JPG)
 
 <b>Red:</b> Output Clock <br>
 <b>Blue:</b> Input Clock <br>
@@ -337,12 +337,21 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 <b>Red:</b> Up Signal <br>
 <b>Blue:</b> Down Signal <br>
 
+### VCO
+
+![FD_postlaywave](https://user-images.githubusercontent.com/88256941/127766630-8942e55a-9c6d-48c7-8846-a3dc53005983.JPG)
+
+<b>Red:</b> Input Clock <br>
+<b>Blue:</b> Output Clock <br>
+
 ### Frequency Divider
 
 ![FD_postlaywave](https://user-images.githubusercontent.com/88256941/127766630-8942e55a-9c6d-48c7-8846-a3dc53005983.JPG)
 
 <b>Red:</b> Input Clock <br>
 <b>Blue:</b> Output Clock <br>
+
+
 
 ## About Tapeout
 
