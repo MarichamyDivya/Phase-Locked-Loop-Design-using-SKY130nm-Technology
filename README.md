@@ -222,7 +222,7 @@ Similarly, we run this command for different PLL blocks by appropriately changin
 <b>Blue:</b> Output Clock Divided by 8 <br>
 <b>Yellow:</b> Down Signal <br>
 <b>Brown:</b> Up Signal <br>
-<b>Pink:</b>Charge pump output <br>
+<b>Pink (top) :</b>Charge pump output <br>
 
 ## Troubleshooting steps
 
@@ -370,7 +370,7 @@ We should first connect our silicon wafer with the real world. For that we use I
 
 It will provide the user project area to add our design, and need not bother about other things on SOC.
 
-# Acknowledgemnt
+# Acknowledgement
 
 1. I would like to thank Mr. Kunal Ghosh, co-founder [VSD](https://www.vlsisystemdesign.com/), for providing me with this wonderful 2-day workshop.
 
