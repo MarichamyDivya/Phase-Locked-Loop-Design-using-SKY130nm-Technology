@@ -295,7 +295,7 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 #### The command to be run to obtain the Frequency Divider layout is as shown below:
 
-![Fd_lay_term](https://user-images.githubusercontent.com/88256941/127762256-af3a007d-c898-448a-94e2-e1bdc46c31fa.JPG)
+![Fd_lay_term](https://user-images.githubusercontent.com/88256941/127763825-11b964fc-cc75-415c-9977-0d45fe16aac0.JPG)
 
 #### The Frequency Divider layout is as shown below:
 
