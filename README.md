@@ -147,4 +147,19 @@ After creating the .cr files we run the Ngspice simulation.
 
 ### Phase Frequency Detector 
 
+The command to be run to obtain the PFD waveform is as shown below:
+
+![PD_ngspice](https://user-images.githubusercontent.com/88256941/127760351-ce5670d5-fe8f-4380-aa0d-fa053832e3fc.JPG)
+
+
+The PFD waveform is as shown below:
+
+![PD_wave](https://user-images.githubusercontent.com/88256941/127760347-cac474f0-bd49-4eae-a8f5-6c7492be2f07.JPG)
+
+<b>Red:</b> Clock 1 <br>
+<b>Blue:</b> Clock 2 <br>
+<b>Orange:</b> Up Signal <br>
+<b>Green:</b> Down Signal
+
+### Charge Pump 
 
