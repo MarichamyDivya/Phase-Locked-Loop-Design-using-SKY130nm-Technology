@@ -1,4 +1,4 @@
-# Phase-Locked-Loop-Design-using-SKY130nm-Technology
+# Phase-Locked-Loop (PLL) -Design-using-SKY130nm-Technology
 2-Day Workshop, 31st July 2021 and 1st August 2021
 
 ## Overview
@@ -38,7 +38,7 @@ For, detecting the phase error between the input reference clock and the feedbac
 
 The basic block diagram of PFD is as shown below:
 
-![PFD_block](https://user-images.githubusercontent.com/88256941/127757062-ac847dfe-ae08-4907-a467-977b1c018786.JPG)
+![PFD_block](https://user-images.githubusercontent.com/88256941/127771209-8fb9eac8-0cc7-4ed8-8d37-463ae01babc2.JPG)
 
 When falling edge of reference clock leads feedback clock, the UP signal goes high and DN signal remains low. UP signal remains high until it detects the falling edge of the feedback clock. As soon as feedback clock falling edge arrives, UP signal goes low. 
 
@@ -56,7 +56,7 @@ It generates the error current (ICP) which is proportional to the phase differen
   
   Charge pump circuit have of charge leakage, which should be reduced as much as possible.
 
-3. Loop Pass Filter (LPF)
+3. Loop Filter (LF)
 
 It converts the error current into error voltage. It also controls the loop dynamics and stability of the system. 
 
@@ -109,7 +109,7 @@ Magic: magic - T <Technology_file_from_PDK><the_layout_file_to_open>
 
 It opens the layout file, where we can view the layout  and make modifications to it. Magic has many features, out of which we will be using parasitic extraction and gds features.
 
-### Developmet Flow
+### Development Flow
 
 With the PLL specifications, we will perform SPICE-level circuit development and pre-layout simulation. After the pre-layout simulation we develop layout. Before layout phase we donot know the interconnection or proximity or size of the different circuits. After layout, we can extract the capacitive effect which is called a s the parasitic extraction. After this, we have spice netlist which is more closer to the real worls. Then, we do the post simulation which is more accurate than thr pre-layout simulation.
 
@@ -378,7 +378,7 @@ Tapeout means to send our design to the fab after we prepare it with all the add
 
 We should first connect our silicon wafer with the real world. For that we use I/O pads. Then for any kind of serial connectivity like I2C, UART and other peripherals, we should have their designs. Memory also has to be incorporated which takes a lot of space. Testing mechanisms should also be added. Taking care of all of this becomes complicated hence, we should choose a driver to enable our IP to meet the desired requirements to undergo fabrication process. For this we can use Efabless Caravel SoC template.
 
-It will provide the user project area to add our design, and need not bother about other things on SOC.
+It will provide the user project area to add our design, and we need not bother about other things on SOC.
 
 # Acknowledgement
 
