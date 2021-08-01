@@ -1,5 +1,5 @@
 # Phase-Locked-Loop-Design-using-SKY130nm-Technology
-Workshop, 31 July 2021 and 1 August 2021
+2-Day Workshop, 31st July 2021 and 1st August 2021
 
 ## Overview
 The two day workshop on designing Phase Locked Loop (PLL) using SKY130nm Technology comprised of the following things:
@@ -142,7 +142,7 @@ Input Fmin= 5MHz , Fmax= 12.5MHz
 
 Multiplier = 8x
 
-Jitter (RMS) < -20ns
+Jitter (RMS) < 20ns
 
 Duty cycle = 50%
 
@@ -316,6 +316,12 @@ Similarly, we run this command for different PLL blocks by appropriately changin
 
 ### Phase Frequency Detector
 
+#### The command to be run to obtain the PFD layout is as shown below:
+
+![PFD_postlay_term](https://user-images.githubusercontent.com/88256941/127768765-b8d21e88-b3cf-42c2-810d-d6591250f484.JPG)
+
+Similarly, we run this command for different PLL blocks by appropriately changing the name of the block as per the requirement.
+
 ![PFD_postlay](https://user-images.githubusercontent.com/88256941/127766198-5b39072a-7a95-4b99-8272-1f658c7d8e50.JPG)
 
 <b>Red:</b> Clock 1 <br>
@@ -344,19 +350,17 @@ Similarly, we run this command for different PLL blocks by appropriately changin
 
 ### VCO
 
-![FD_postlaywave](https://user-images.githubusercontent.com/88256941/127766630-8942e55a-9c6d-48c7-8846-a3dc53005983.JPG)
-
-<b>Red:</b> Input Clock <br>
-<b>Blue:</b> Output Clock <br>
-
-### Frequency Divider
-
 ![VCO_postlay](https://user-images.githubusercontent.com/88256941/127768371-fd0bd192-f68c-471c-997d-5077ee143037.JPG)
 
 <b>Red:</b> Output Clock <br>
 <b>Blue:</b> Control Voltage <br>
 
+### Frequency Divider
 
+![FD_postlaywave](https://user-images.githubusercontent.com/88256941/127766630-8942e55a-9c6d-48c7-8846-a3dc53005983.JPG)
+
+<b>Red:</b> Input Clock <br>
+<b>Blue:</b> Output Clock <br>
 
 ## About Tapeout
 
