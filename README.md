@@ -327,6 +327,10 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 <b>Area:</b> 496.03um square <br>
 
+## Post-layout Simulation
+
+### Phase Frequency Detector
+
 
 
 
