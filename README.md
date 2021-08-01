@@ -291,13 +291,13 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 #### The command to be run to obtain the Multiplier layout is as shown below:
 
-![Fd_lay_term](https://user-images.githubusercontent.com/88256941/127762256-af3a007d-c898-448a-94e2-e1bdc46c31fa.JPG)
+![mux_lay_term](https://user-images.githubusercontent.com/88256941/127762428-1c29e1a5-4051-4e39-8ac4-92c0d87ddffa.JPG)
 
 #### The Multiplier layout is as shown below:
 
 ![mux_lay](https://user-images.githubusercontent.com/88256941/127762216-029ce765-fbae-4fa1-9822-66be7bff56ee.JPG)
 
-<b>Area:</b> 49.09um square <br>
+<b>Area:</b> 12.12um square <br>
 
 ### Integrated PLL
 
@@ -309,7 +309,7 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 ![PLL_lay](https://user-images.githubusercontent.com/88256941/127762206-7b097ca1-0888-4d52-9484-5188fd702c6e.JPG)
 
-<b>Area:</b> 49.09um square <br>
+<b>Area:</b> 496.03um square <br>
 
 
 
