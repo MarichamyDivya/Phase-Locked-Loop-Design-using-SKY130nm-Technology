@@ -4,9 +4,45 @@
 ## Overview
 The two day workshop on designing Phase Locked Loop (PLL) using SKY130nm Technology comprised of the following things:
 
-Day 1 : Basic theory of PLL and the steps for lab setup
+Day 1 : Basics of PLL and Steps for lab setup
 
 Day 2 : PLL simulation (Prelayout and Postlayout)
+
+# Table of Contents
+
+- [DAY 1 - Basics of PLL and Steps for lab setup](#day-1---basics-of-pll-and-steps-for-lab-setup)
+  * [Basics of PLL](#basics-of-pll)
+    + [PLL](#pll)
+    + [Important terms used in PLL](#important-terms-used-in-pll)
+  * [Lab setup](#lab-setup)
+    + [Using tools](#using-tools)
+    + [Development Flow](#development-flow)
+    + [Ngspice setup](#ngspice-setup)
+    + [Magic setup](#magic-setup)
+  * [PLL Specifications](#pll-specifications)
+-  [DAY 2 : PLL simulation (Prelayout and Postlayout)](https://github.com/MarichamyDivya/Phase-Locked-Loop-Design-using-SKY130nm-Technology/edit/main/README.md#-PLL-simulation-(-Prelayout-and-Postlayout-)-)
+    * [Pre-layout simulations](#pre-layout-simulations)
+    + [Phase Frequency Detector](#phase-frequency-detector)
+    + [Charge Pump](#charge-pump)
+    + [VCO](#vco)
+    + [Frequency Divider](#frequency-divider)
+    + [PLL](#pll-1)
+  * [Troubleshooting steps](#troubleshooting-steps)
+  * [Layout](#layout)
+    + [Phase Frequency Detector](#phase-frequency-detector-1)
+    + [Charge Pump](#charge-pump-1)
+    + [VCO](#vco-1)
+    + [Frequency Divider](#frequency-divider-1)
+    + [MUX](#mux)
+    + [Integrated PLL](#integrated-pll)
+  * [Post-layout Simulation](#post-layout-simulation)
+    + [Phase Frequency Detector](#phase-frequency-detector-2)
+    + [Charge Pump](#charge-pump-2)
+    + [VCO](#vco-2)
+    + [Frequency Divider](#frequency-divider-2)
+    + [PLL](#pll-2)
+  * [About Tapeout](#about-tapeout)
+- [Acknowledgement](#acknowledgement)
 
 # DAY 1 - Basics of PLL and Steps for lab setup
 
