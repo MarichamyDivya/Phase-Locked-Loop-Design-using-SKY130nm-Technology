@@ -5,6 +5,7 @@ Workshop, 31 July 2021 and 1 August 2021
 The two day workshop on designing Phase Locked Loop (PLL) using SKY130nm Technology comprised of the following things:
 
 Day 1 : Basic theory of PLL and the steps for lab setup
+
 Day 2 : PLL simulation (Prelayout and Postlayout)
 
 # DAY 1 - Basics of PLL and Steps for lab setup
@@ -167,6 +168,8 @@ After creating the .cr files we run the Ngspice simulation.
 
 ![PD_ngspice](https://user-images.githubusercontent.com/88256941/127760351-ce5670d5-fe8f-4380-aa0d-fa053832e3fc.JPG)
 
+Similarly, we run this command for different PLL blocks by appropriately changing the name of the block as per the requirement.
+
 #### The PFD waveform is as shown below:
 
 ![PD_wave](https://user-images.githubusercontent.com/88256941/127760347-cac474f0-bd49-4eae-a8f5-6c7492be2f07.JPG)
@@ -178,11 +181,7 @@ After creating the .cr files we run the Ngspice simulation.
 
 ### Charge Pump 
 
-#### The command to be run to obtain the CP various waveforms is as shown below:
-
-![cp_ngspice](https://user-images.githubusercontent.com/88256941/127760601-47ff13a2-7a6a-4f44-844f-4f33f7866406.JPG)
-
-#### CP response when "UP" signal is high
+#### CP response when "UP" signal is high :
 
 ![CP_charging](https://user-images.githubusercontent.com/88256941/127760599-9c5bc28d-81e8-4af5-b811-cea57816073d.JPG)
 
@@ -197,10 +196,6 @@ After creating the .cr files we run the Ngspice simulation.
 
 ### VCO
 
-#### The command to be run to obtain the VCO waveform is as shown below:
-
-![vco_ngspice](https://user-images.githubusercontent.com/88256941/127760903-629cd0e8-12bc-452b-9681-07731184b037.JPG)
-
 #### VCO waveform is as shown below:
 
 ![VCO_wave](https://user-images.githubusercontent.com/88256941/127760904-d2aabad9-c442-495e-98ae-555d6ffbb244.JPG)
@@ -209,10 +204,6 @@ After creating the .cr files we run the Ngspice simulation.
 <b>Blue:</b> Output Clock <br>
 
 ### Frequency Divider 
-
-#### The command to be run to obtain the Frequency Divider waveform is as shown below:
-
-![Fd_wave](https://user-images.githubusercontent.com/88256941/127760907-64091b47-a446-41d1-8060-17bcb3c86b6e.JPG)
 
 #### The Frequency Divider waveform is as shown below:
 
@@ -338,6 +329,14 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 <b>Orange:</b> Up signal <br>
 <b>Green:</b> Down signal <br>
 
+### Charge Pump
+
+![CP_postlaywave](https://user-images.githubusercontent.com/88256941/127766841-8cdf0080-05f1-48c4-bfd7-3e30cf7f7d12.JPG)
+
+<b>Orange:</b> Charge Pump Output Voltage <br>
+<b>Red:</b> Up Signal <br>
+<b>Blue:</b> Down Signal <br>
+
 ### Frequency Divider
 
 ![FD_postlaywave](https://user-images.githubusercontent.com/88256941/127766630-8942e55a-9c6d-48c7-8846-a3dc53005983.JPG)
@@ -345,10 +344,19 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 <b>Red:</b> Input Clock <br>
 <b>Blue:</b> Output Clock <br>
 
+## About Tapeout
 
+Tapeout means to send our design to the fab after we prepare it with all the additional support we require. 
 
+We should first connect our silicon wafer with the real world. For that we use I/O pads. Then for any kind of serial connectivity like I2C, UART and other peripherals, we should have their designs. Memory also has to be incorporated which takes a lot of space. Testing mechanisms should also be added. Taking care of all of this becomes complicated hence, we should choose a driver to enable our IP to meet the desired requirements to undergo fabrication process. For this we can use Efabless Caravel SoC template.
 
+It will provide the user project area to add our design, and need not bother about other things on SOC.
 
+# Acknowledgemnt
+
+1. I would like to thank Mr. Kunal Ghosh, co-founder [VSD](https://www.vlsisystemdesign.com/), for providing me with this wonderful 2-day workshop.
+
+2. I would like to thank Ms. Lakshmi S, for guiding throughout the workshop about how to design PLL.
 
 
 
