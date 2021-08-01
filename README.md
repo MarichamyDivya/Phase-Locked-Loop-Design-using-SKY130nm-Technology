@@ -101,8 +101,6 @@ Ngspic: ngsice<circuit_file_name>
 
 It plots the results based upon the simulation instruction given in the circuit file after simulating the given circuit file. 
 
-
-
 Magic: magic - T <Technology_file_from_PDK><the_layout_file_to_open> 
 
 It opens the layout file, where we can view the layout  and make modifications to it. Magic has many features, out of which we will be using parasitic extraction and gds features.
@@ -112,3 +110,18 @@ It opens the layout file, where we can view the layout  and make modifications t
 With the PLL specifications, we will perform SPICE-level circuit development and pre-layout simulation. After the pre-layout simulation we develop layout. Before layout phase we donot know the interconnection or proximity or size of the different circuits. After layout, we can extract the capacitive effect which is called a s the parasitic extraction. After this, we have spice netlist which is more closer to the real worls. Then, we do the post simulation which is more accurate than thr pre-layout simulation.
 
 Its is important to note that, after each simulation step, we should make several changes to bring the working of the circuit much closer to the required specification.
+
+### Ngspice setup
+
+We use the following command to isntall Ngspice:
+
+sudo apt-get install ngspice
+
+Then we fetch the sky130 library which consists of the transistor models which is needed for the simulation.
+### Magic setup
+
+We will use the source code from opendesigncircuit.com. We can do the git clone and intall the Magic. Then, we should compile it, for that we should install the dependencies form the opendesigncircuit.com. Then we run the ./configure command. The we run the make command. Then we run the command
+
+sudo make install
+
+Then we should install the sky130nm technology information which Magic needs for desiging the layout.
