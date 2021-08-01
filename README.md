@@ -130,3 +130,21 @@ sudo make install
 Then we should install the sky130nm technology information which Magic needs for desiging the layout.
 
 # DAY 2 - PLL simulation (Prelayout and Postlayout)
+
+A spice file is a text file with .cr extenstion.
+
+For example, if we want to write code for frequency divider circuit, we write the following command in terminal:
+
+touch FD.cir
+
+and then page will be created where we should write the code for the desired circuit. Don't forget to include the SPICE library file in it.
+
+Similarly we do it for all the blocks of PLL.
+
+After creating the .cr files we run the Ngspice simulation.
+
+## Pre-layout simulations
+
+### Phase Frequency Detector 
+
+
