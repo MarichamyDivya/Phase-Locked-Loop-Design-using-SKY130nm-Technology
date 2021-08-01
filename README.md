@@ -25,4 +25,33 @@ Phase noise is the random fluctuation of the zero crossing of a periodic wavefor
 
 The block diagram of PLL is as shown below:
 
+![Digital PLL](https://user-images.githubusercontent.com/88256941/127756019-f91551d5-92fd-4cfd-afb7-49beeda58476.JPG)
+
+PLL has five blocks: 
+
+1. Phase Frequency Detector (PFD) 
+
+It detects the phase (and frequency) error between the input reference clock IN (that is, crystal oscillator) and feedback clock FB. It generates two output signals, UP and DN, whose pulse width is proportional to the phase error.
+
+2. Charge Pump (CP)
+
+It generates the error current (ICP) which is proportional to the phase difference od pulse width between UP and DN which inturn is proportional to the input phase error. 
+
+3. Loop Pass Filter (LP)
+
+It converts the error current into error voltage. It also controls the loop dynamics and stability of the system.
+
+4. Voltage Controlled Oscillator (VCO)
+
+VCO is the heart of PLL and it generates the desired high frequency clock output. 
+
+5. Feedback Divider (N)
+
+It divides the VCO clock to generate the feedback clock with same frequency as input reference clock.
+
+### Phase Frequency Detector
+
+For, detecting the phase error between the input reference clock and the feedback clock, we donot use XOR phase detector as it doesnt correct the frequency errors. Instead, we use Phase Frequency Detector , which will correct both, phase and frequency differences between the input reference clock and the feedback clock.
+
+A basic
 
