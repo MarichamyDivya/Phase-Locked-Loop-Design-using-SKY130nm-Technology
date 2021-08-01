@@ -181,7 +181,7 @@ Similarly, we run this command for different PLL blocks by appropriately changin
 
 ### Charge Pump 
 
-#### CP response when "UP" signal is high :
+#### CP response when "UP" signal is high:
 
 ![CP_charging](https://user-images.githubusercontent.com/88256941/127760599-9c5bc28d-81e8-4af5-b811-cea57816073d.JPG)
 
@@ -331,11 +331,16 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 ### Charge Pump
 
+#### CP response when "UP" signal is high:
+
 ![CP_postlaywave](https://user-images.githubusercontent.com/88256941/127766841-8cdf0080-05f1-48c4-bfd7-3e30cf7f7d12.JPG)
 
 <b>Orange:</b> Charge Pump Output Voltage <br>
 <b>Red:</b> Up Signal <br>
 <b>Blue:</b> Down Signal <br>
+
+#### CP output rise due to charge leakage: 
+
 
 ### VCO
 
@@ -346,10 +351,10 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 ### Frequency Divider
 
-![FD_postlaywave](https://user-images.githubusercontent.com/88256941/127766630-8942e55a-9c6d-48c7-8846-a3dc53005983.JPG)
+![VCO_postlay](https://user-images.githubusercontent.com/88256941/127768371-fd0bd192-f68c-471c-997d-5077ee143037.JPG)
 
-<b>Red:</b> Input Clock <br>
-<b>Blue:</b> Output Clock <br>
+<b>Red:</b> Output Clock <br>
+<b>Blue:</b> Control Voltage <br>
 
 
 
