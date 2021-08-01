@@ -89,8 +89,11 @@ The time taken by the PLL to lock from an unlocked state is called the settling 
 ## Lab setup
 
 We should use the source code to build any software tool as it gives the latest updates and fixes. 
+
 Here, we will use two tools. They are:
-Ngspice : for transisto level simulation
+
+Ngspice : for transistor level simulation
+
 Magic : for layout design and parasitic extraction.
 
 ### Using tools
@@ -125,3 +128,5 @@ We will use the source code from opendesigncircuit.com. We can do the git clone 
 sudo make install
 
 Then we should install the sky130nm technology information which Magic needs for desiging the layout.
+
+# DAY 2 - PLL simulation (Prelayout and Postlayout)
