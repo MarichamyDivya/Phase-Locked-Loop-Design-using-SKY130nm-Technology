@@ -243,7 +243,7 @@ To connect two transistors, we use interconnect layer. To connect two metal laye
 
 #### The command to be run to obtain the PFD layout is as shown below:
 
-![PFD_lay_term](https://user-images.githubusercontent.com/88256941/127762250-f5c4eb3f-805a-4d2b-8dbc-0bc4a5e22e7e.JPG)
+![PFD_lay_term](https://user-images.githubusercontent.com/88256941/127763547-f3c9e184-2b32-4162-b851-936adfbb1ea6.JPG)
 
 #### The PFD layout is as shown below:
 
